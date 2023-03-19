@@ -4,6 +4,9 @@ A Django app for generating transportation zebra labels. Easy to include in your
 ## Basic functionallity ##
 In current version only zebra label is available. However, our future plans include expanding our document offerings to include CMRs, manifests, and other relevant transport-related documents. We also plan to add support for additional printer languages, allowing for more flexibility in printing options.
 
+## API documentation
+Redoc is included in the requirement so when running the app it will automatically genereate the API documentation.
+
 ## Example Usage
 To generate a zebra label in base64 encoding, simply make a POST request to the provided API endpoint with the necessary data. The response will contain the zebra label in base64 encoding.
 
