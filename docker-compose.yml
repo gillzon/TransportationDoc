@@ -12,11 +12,11 @@ services:
     ports:
       - "8002:8000"
     environment:
-      - DB_HOST=db
-      - DB_NAME=uniship
-      - DB_USER=uniship
-      - DB_PASS=KLSKDFLSK!##jkslö=)
-      - DB_PORT=5434
+      - DB_HOST=
+      - DB_NAME=
+      - DB_USER=
+      - DB_PASS=
+      - DB_PORT=
     depends_on:
       - db
     links:
@@ -26,9 +26,9 @@ services:
     volumes:
       - ./db:/var/lib/postgresql/data
     environment:
-      - POSTGRES_USER=uniship
-      - POSTGRES_PASSWORD=KLSKDFLSK!##jkslö=)
-      - POSTGRES_DB=uniship
+      - POSTGRES_USER=
+      - POSTGRES_PASSWORD=
+      - POSTGRES_DB=
     ports:
       - 5434:5434
     command: -p 5434
